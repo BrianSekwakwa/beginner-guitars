@@ -8,9 +8,12 @@
   },
   "homepage": "https://briansekwakwa.github.io/beginner-guitars",
   "scripts": {
-    "test": "gh-pages -d docs"
+    "deploy": "gh-pages -d docs"
   },
   "keywords": [],
   "author": "Brian Sekwakwa",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
 }
