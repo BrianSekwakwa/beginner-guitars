@@ -1,14 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 nav {
   height: 40px;
   width: 100%;
   background-color: #333;
   color: #eee;
-  position: fixed; }
+  position: fixed;
+}
 
 nav .logo {
   margin-left: 20px;
@@ -22,21 +18,25 @@ nav .logo {
   align-items: center;
   flex-direction: column;
   clear: both;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+}
 
 .test {
   transform: scale(0.5);
-  color: yellow; }
+  color: yellow;
+}
 
 nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
   position: relative;
-  left: 197px; }
-
+  left: 197px;
+}
 nav li {
-  float: left; }
+  // display: inline;
+  float: left;
+}
 
 nav a {
   display: inline-block;
@@ -45,37 +45,44 @@ nav a {
   text-decoration: none;
   padding: 10px 0;
   color: #eee;
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 nav li:hover {
   background-color: #555;
-  border-bottom: 4px solid orange; }
-
+  border-bottom: 4px solid orange;
+}
 nav a#openup {
-  display: none; }
+  display: none;
+}
 
-@media screen and (max-width: 600px) {
+@include mediaSm {
   nav {
     height: auto;
-    border-bottom: 0; }
+    border-bottom: 0;
+  }
   nav .logo {
-    display: none; }
+    display: none;
+  }
   nav ul {
     display: none;
     height: auto;
-    left: 0; }
+    left: 0;
+  }
   nav li {
     width: 100%;
     float: left;
-    position: relative; }
+    position: relative;
+  }
   nav a {
     text-align: left;
     width: 100%;
     text-indent: 25px;
     background: #333;
-    border-bottom: 1px solid #555; }
+    border-bottom: 1px solid #555;
+  }
   nav a:hover {
-    background: #444; }
+    background: #444;
+  }
   nav a#openup:after {
     content: "|||";
     transform: rotate(-90deg);
@@ -88,27 +95,28 @@ nav a#openup {
     display: inline-block;
     position: absolute;
     right: 5px;
-    top: 20px; }
+    top: 20px;
+  }
   nav a#openup {
     display: block;
     background-color: #333;
     width: 100%;
-    position: relative; } }
+    position: relative;
+  }
+}
 
 .cf:before,
 .cf:after {
   content: "";
-  display: table; }
+  display: table;
+}
 
 .cf:after {
-  clear: both; }
+  clear: both;
+}
 
 .cf {
-  zoom: 1; }
+  zoom: 1;
+}
 
 /* For IE 6/7 (trigger hasLayout) */
-.hero {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center; }

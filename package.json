@@ -1,19 +1,21 @@
 {
   "name": "beginner-guitars",
   "version": "1.0.0",
-  "description": "acoustic beginner guitar website with boostrap 4",
+  "description": "",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "homepage": "https://briansekwakwa.github.io/beginner-guitars",
   "scripts": {
+    "sass": "node-sass -w scss -o docs/css --recursive",
     "deploy": "gh-pages -d docs"
   },
   "keywords": [],
   "author": "Brian Sekwakwa",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }
 }
