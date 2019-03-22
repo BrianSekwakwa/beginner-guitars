@@ -23,24 +23,24 @@ $(function() {
   $(".open-menu").height($(window).height());
 });
 
-// On scroll event
-window.onscroll = function() {
-  scrollFunction();
-};
+// // On scroll event
+// window.onscroll = function() {
+//   scrollFunction();
+// };
 
-function scrollFunction() {
-  const logo = document.querySelector("nav .logo");
-  if (
-    document.body.scrollTop > 200 ||
-    document.documentElement.scrollTop > 200
-  ) {
-    logo.classList.add("test");
-    // document.getElementById("myP").className = "test";
-  } else if (
-    document.body.scrollTop < 50 ||
-    document.documentElement.scrollTop < 50
-  ) {
-    logo.classList.remove("test");
-    // document.getElementById("myP").className = "";
-  }
-}
+// function scrollFunction() {
+//   const logo = document.querySelector("nav .logo");
+//   if (
+//     document.body.scrollTop > 200 ||
+//     document.documentElement.scrollTop > 200
+//   ) {
+//     logo.classList.add("test");
+//     // document.getElementById("myP").className = "test";
+//   } else if (
+//     document.body.scrollTop < 50 ||
+//     document.documentElement.scrollTop < 50
+//   ) {
+//     logo.classList.remove("test");
+//     // document.getElementById("myP").className = "";
+//   }
+// }

@@ -1,41 +1,22 @@
 nav {
-  height: 40px;
+  height: 50px;
   width: 100%;
   background-color: #333;
   color: #eee;
   position: fixed;
-}
-
-nav .logo {
-  margin-left: 20px;
-  position: fixed;
-  width: 11rem;
-  height: 5rem;
-  background-color: red;
-  float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  clear: both;
-  transition: all 0.5s ease-out;
-}
-
-.test {
-  transform: scale(0.5);
-  color: yellow;
+  z-index: 5;
 }
 
 nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  position: relative;
-  left: 197px;
+  height: 100%;
 }
 nav li {
   // display: inline;
   float: left;
+  height: 100%;
 }
 
 nav a {
@@ -46,6 +27,7 @@ nav a {
   padding: 10px 0;
   color: #eee;
   text-decoration: none;
+  padding-top: 15px;
 }
 nav li:hover {
   background-color: #555;
@@ -95,7 +77,7 @@ nav a#openup {
     display: inline-block;
     position: absolute;
     right: 5px;
-    top: 20px;
+    top: 29px;
   }
   nav a#openup {
     display: block;

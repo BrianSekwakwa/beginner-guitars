@@ -1,0 +1,23 @@
+.guitars {
+  margin-top: 2rem;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__card {
+    margin-top: 2rem;
+    background: red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    &__item {
+      background: orange;
+      height: 300px;
+      border-radius: 5px;
+    }
+  }
+}

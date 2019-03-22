@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Sniglet");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+// font-family: 'Sniglet', cursive;
+// font-family: 'Montserrat', sans-serif;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 // Media Query Mixins

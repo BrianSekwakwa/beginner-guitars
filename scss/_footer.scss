@@ -1,0 +1,13 @@
+.footer {
+  &__store-links {
+    background: red;
+    height: 18.75rem;
+  }
+  &__copyright {
+    text-align: center;
+    background: darkslategray;
+    margin-bottom: 0;
+    padding-top: 0.8rem;
+    height: 3rem;
+  }
+}
