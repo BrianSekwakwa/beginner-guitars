@@ -12,7 +12,14 @@ nav {
   background-color: #333;
   color: #eee;
   position: fixed;
-  z-index: 5; }
+  z-index: 5;
+  transition: all 0.4s ease-out; }
+
+nav:hover {
+  background-color: #eee;
+  color: #333; }
+  nav:hover a {
+    color: #333; }
 
 nav ul {
   padding: 0;
@@ -22,7 +29,11 @@ nav ul {
 
 nav li {
   float: left;
-  height: 100%; }
+  height: 100%;
+  transition: all 0.3s ease-out; }
+
+nav li:hover {
+  border-bottom: 4px solid #333; }
 
 nav a {
   display: inline-block;
@@ -34,9 +45,8 @@ nav a {
   text-decoration: none;
   padding-top: 15px; }
 
-nav li:hover {
-  background-color: #555;
-  border-bottom: 4px solid orange; }
+nav a:hover {
+  text-decoration: none; }
 
 nav a#openup {
   display: none; }
@@ -82,6 +92,11 @@ nav a#openup {
     width: 100%;
     position: relative; } }
 
+@media screen and (min-width: 1366px) {
+  nav ul {
+    max-width: 81.875rem;
+    margin: 0 auto; } }
+
 .cf:before,
 .cf:after {
   content: "";
@@ -112,7 +127,7 @@ nav a#openup {
   .hero__title {
     font-size: 2rem;
     line-height: 1.3;
-    padding-left: 0.5rem;
+    padding-left: 1.5rem;
     position: absolute;
     color: #fff; }
   @media screen and (max-width: 767.8px) {
@@ -193,3 +208,7 @@ nav a#openup {
   margin-bottom: 0;
   padding-top: 0.8rem;
   height: 3rem; }
+
+main {
+  max-width: 81.875rem;
+  margin: 0 auto; }
