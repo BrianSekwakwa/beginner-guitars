@@ -7,7 +7,7 @@
 
   &__card {
     margin-top: 2rem;
-    max-width: 1200px;
+    max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -36,6 +36,26 @@
       & p {
         text-align: center;
         padding-top: 1rem;
+      }
+    }
+  }
+
+  .guitars__modal__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__content {
+      & ul {
+        padding-left: 1.1rem;
+      }
+
+      & button {
+        width: 100%;
+        height: 2rem;
+
+        &:last-child {
+          margin-top: 0.5rem;
+        }
       }
     }
   }
