@@ -1,9 +1,24 @@
 .players {
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 0 0.5rem;
 
   &__video {
-    margin-top: 2rem;
+    margin-top: 3rem;
     text-align: center;
+
+    & iframe {
+      width: 40rem;
+      height: 22.5rem;
+
+      @include mediaMd {
+        width: 30rem;
+        height: 12.5rem;
+      }
+
+      @include mediaSm {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }

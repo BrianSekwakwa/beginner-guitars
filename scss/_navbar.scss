@@ -1,20 +1,19 @@
 nav {
   height: 50px;
   width: 100%;
-  background-color: #333;
-  color: #eee;
+  background-color: $color-one;
   position: fixed;
   z-index: 5;
-  box-shadow: 0px 1px 5px #333;
+  box-shadow: 0px 1px 5px $color-one;
   transition: all 0.4s ease-out;
 }
 
 nav:hover {
-  background-color: #eee;
-  color: #333;
+  background-color: #fff;
+  color: $color-one;
 
   a {
-    color: #333;
+    color: $color-one;
   }
 }
 
@@ -32,7 +31,7 @@ nav li {
 }
 
 nav li:hover {
-  border-bottom: 4px solid #333;
+  border-bottom: 4px solid $color-one;
 }
 
 nav a {
@@ -41,9 +40,10 @@ nav a {
   text-align: center;
   text-decoration: none;
   padding: 10px 0;
-  color: #eee;
+  color: #fff;
   text-decoration: none;
   padding-top: 15px;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -58,6 +58,11 @@ nav a#openup {
   nav {
     height: auto;
     border-bottom: 0;
+  }
+  nav:hover {
+    a {
+      color: #fff;
+    }
   }
   nav .logo {
     display: none;
@@ -76,11 +81,12 @@ nav a#openup {
     text-align: left;
     width: 100%;
     text-indent: 25px;
-    background: #333;
-    border-bottom: 1px solid #555;
+    background: $color-one;
+    color: #fff;
   }
   nav a:hover {
-    background: #444;
+    background: #fff;
+    color: $color-one;
   }
   nav a#openup:after {
     content: "|||";
@@ -98,7 +104,6 @@ nav a#openup {
   }
   nav a#openup {
     display: block;
-    background-color: #333;
     width: 100%;
     position: relative;
   }
