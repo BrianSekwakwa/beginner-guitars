@@ -83,6 +83,7 @@ nav a#openup {
     text-indent: 25px;
     background: $color-one;
     color: #fff;
+    transition: all 0.3s ease-out;
   }
   nav a:hover {
     background: #fff;
@@ -100,7 +101,7 @@ nav a#openup {
     display: inline-block;
     position: absolute;
     right: 5px;
-    top: 29px;
+    top: 25px;
   }
   nav a#openup {
     display: block;
