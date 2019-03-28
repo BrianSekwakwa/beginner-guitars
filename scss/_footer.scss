@@ -1,18 +1,26 @@
 .footer {
   &__store-links {
     margin-top: 3rem;
+    margin-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
     max-width: 81.875rem;
     padding-top: 1.5rem;
-    border-top: 2px solid #333;
-    height: 22rem;
+    border-top: 1px solid $color-one;
     text-align: center;
+
+    h5 {
+      margin-bottom: 1rem;
+    }
 
     & img {
       width: 15rem;
-      margin: 0 1rem;
+      margin: 1rem 1rem;
       transition: all 0.3s ease-out;
+
+      @include verySmall {
+        width: 9rem;
+      }
 
       &:hover {
         cursor: pointer;
@@ -22,7 +30,8 @@
   }
   &__copyright {
     text-align: center;
-    background: darkslategray;
+    background: $color-one;
+    color: #fff;
     margin-bottom: 0;
     padding-top: 0.8rem;
     height: 3rem;

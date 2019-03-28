@@ -54,7 +54,7 @@ nav a#openup {
   display: none;
 }
 
-@include mediaSm {
+@include verySmall {
   nav {
     height: auto;
     border-bottom: 0;
@@ -101,7 +101,7 @@ nav a#openup {
     display: inline-block;
     position: absolute;
     right: 5px;
-    top: 25px;
+    top: 27px;
   }
   nav a#openup {
     display: block;
@@ -110,7 +110,7 @@ nav a#openup {
   }
 }
 
-@include mediaSXL {
+@include veryLarge {
   nav ul {
     max-width: 81.875rem;
     margin: 0 auto;

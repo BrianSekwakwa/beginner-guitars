@@ -52,7 +52,7 @@ nav a:hover {
 nav a#openup {
   display: none; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 598.5px) {
   nav {
     height: auto;
     border-bottom: 0; }
@@ -90,7 +90,7 @@ nav a#openup {
     display: inline-block;
     position: absolute;
     right: 5px;
-    top: 25px; }
+    top: 27px; }
   nav a#openup {
     display: block;
     width: 100%;
@@ -122,21 +122,36 @@ nav a#openup {
   .hero__bg-image {
     width: 100%;
     height: 100%;
-    background: url("../img/image01--very-hi-res.jpg");
+    background: url("../img/image01--low-res.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(5px);
     -webkit-filter: blur(5px); }
+    @media screen and (min-width: 768px) {
+      .hero__bg-image {
+        background: url("../img/image01--mid-res.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; } }
+    @media screen and (min-width: 1200px) {
+      .hero__bg-image {
+        background: url("../img/image01--hi-res.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; } }
+    @media screen and (min-width: 1366px) {
+      .hero__bg-image {
+        background: url("../img/image01--very-hi-res.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; } }
   .hero__title {
     font-size: 2rem;
     line-height: 1.3;
     padding-left: 1.5rem;
     position: absolute;
     color: #fff; }
-  @media screen and (max-width: 767.8px) {
-    .hero {
-      background: none; } }
 
 .intro {
   padding: 0 0.5rem;
@@ -147,7 +162,7 @@ nav a#openup {
     margin-top: 3rem;
     font-size: 2rem;
     text-align: center; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 598.5px) {
       .intro__header {
         font-size: 1.5rem; } }
   .intro__reasons {
@@ -155,35 +170,51 @@ nav a#openup {
     .intro__reasons__item {
       text-align: center;
       margin-top: 3rem; }
+      @media screen and (max-width: 598.5px) {
+        .intro__reasons__item h4 {
+          font-size: 1.1rem; } }
       .intro__reasons__item__grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         grid-gap: 1rem;
         max-width: 60rem;
-        height: 20rem;
         margin-top: 2rem;
         margin-left: auto;
         margin-right: auto; }
         .intro__reasons__item__grid img {
-          width: 100%;
-          height: 100%; }
+          width: 100%; }
         .intro__reasons__item__grid p {
-          text-align: justify; }
+          text-align: left; }
+        @media screen and (min-width: 768px) {
+          .intro__reasons__item__grid {
+            grid-template-columns: 1fr 1fr; }
+            .intro__reasons__item__grid img {
+              height: 20rem; } }
 
 .guitars {
-  margin-top: 2rem; }
+  margin-top: 3rem; }
   .guitars__header {
     text-align: center; }
+    @media screen and (max-width: 598.5px) {
+      .guitars__header {
+        font-size: 1.5rem; } }
   .guitars__card {
     margin-top: 2rem;
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 0.5rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 1.5rem; }
+    @media screen and (min-width: 600px) {
+      .guitars__card {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media screen and (min-width: 1200px) {
+      .guitars__card {
+        grid-template-columns: repeat(3, 1fr); } }
     .guitars__card__item {
-      box-shadow: 0px 0px 8px -3px blue;
+      box-shadow: 0px 0px 8px -2px #f80652;
       height: 20rem;
       transition: all 0.3s ease-out; }
       .guitars__card__item:hover {
@@ -199,12 +230,28 @@ nav a#openup {
         padding-top: 1rem; }
   .guitars .guitars__modal__body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: 1fr;
+    text-align: justify; }
+    @media screen and (min-width: 768px) {
+      .guitars .guitars__modal__body {
+        grid-template-columns: repeat(2, 1fr); } }
+    .guitars .guitars__modal__body__image {
+      text-align: center; }
     .guitars .guitars__modal__body__content ul {
       padding-left: 1.1rem; }
     .guitars .guitars__modal__body__content button {
       width: 100%;
-      height: 2rem; }
+      height: 2.5rem;
+      background: #101c28;
+      border: 2px solid #101c28;
+      border-radius: 25px;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.35s ease-in-out; }
+      .guitars .guitars__modal__body__content button:hover {
+        background: #fff;
+        color: #101c28; }
       .guitars .guitars__modal__body__content button:last-child {
         margin-top: 0.5rem; }
 
@@ -216,36 +263,39 @@ nav a#openup {
     text-align: center; }
     .players__video iframe {
       width: 40rem;
-      height: 22.5rem; }
-      @media screen and (max-width: 767.8px) {
-        .players__video iframe {
-          width: 30rem;
-          height: 12.5rem; } }
-      @media screen and (max-width: 600px) {
+      height: 22.5rem;
+      margin-top: 1rem; }
+      @media screen and (max-width: 598.5px) {
         .players__video iframe {
           width: 100%;
-          height: 100%; } }
+          height: 15rem; } }
 
 .footer__store-links {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 81.875rem;
   padding-top: 1.5rem;
-  border-top: 2px solid #333;
-  height: 22rem;
+  border-top: 1px solid #101c28;
   text-align: center; }
+  .footer__store-links h5 {
+    margin-bottom: 1rem; }
   .footer__store-links img {
     width: 15rem;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
     transition: all 0.3s ease-out; }
+    @media screen and (max-width: 598.5px) {
+      .footer__store-links img {
+        width: 9rem; } }
     .footer__store-links img:hover {
       cursor: pointer;
       transform: scale(1.1); }
 
 .footer__copyright {
   text-align: center;
-  background: darkslategray;
+  background: #101c28;
+  color: #fff;
   margin-bottom: 0;
   padding-top: 0.8rem;
   height: 3rem; }

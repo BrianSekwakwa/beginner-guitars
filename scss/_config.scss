@@ -13,28 +13,35 @@
 
 // Media Query Mixins
 
-@mixin mediaSm {
-  @media screen and (max-width: 600px) {
+// small screens with screen widths of 600px or less
+@mixin verySmall {
+  @media screen and (max-width: 598.5px) {
     @content;
   }
 }
 
-@mixin mediaMd {
-  @media screen and (max-width: 767.8px) {
+// Small Screens larger than 600px
+@mixin small {
+  @media screen and (min-width: 600px) {
     @content;
   }
 }
-@mixin mediaLg {
-  @media screen and (min-width: 768px) and (max-width: 1198.8px) {
+// Medium Screens Larger than 768px
+@mixin medium {
+  @media screen and (min-width: 768px) {
     @content;
   }
 }
-@mixin mediaXL {
+
+// Large Screens larger than 1200px
+@mixin large {
   @media screen and (min-width: 1200px) {
     @content;
   }
 }
-@mixin mediaSXL {
+
+// Large Screens larger than 1366px
+@mixin veryLarge {
   @media screen and (min-width: 1366px) {
     @content;
   }

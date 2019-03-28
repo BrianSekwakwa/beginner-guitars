@@ -1,8 +1,11 @@
 .guitars {
-  margin-top: 2rem;
+  margin-top: 3rem;
 
   &__header {
     text-align: center;
+    @include verySmall {
+      font-size: 1.5rem;
+    }
   }
 
   &__card {
@@ -10,12 +13,21 @@
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 0.5rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 1.5rem;
 
+    @include small {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include large {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     &__item {
-      box-shadow: 0px 0px 8px -3px blue;
+      box-shadow: 0px 0px 8px -2px $color-four;
       height: 20rem;
       transition: all 0.3s ease-out;
 
@@ -42,7 +54,16 @@
 
   .guitars__modal__body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    text-align: justify;
+
+    @include medium {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__image {
+      text-align: center;
+    }
 
     &__content {
       & ul {
@@ -51,7 +72,19 @@
 
       & button {
         width: 100%;
-        height: 2rem;
+        height: 2.5rem;
+        background: $color-one;
+        border: 2px solid $color-one;
+        border-radius: 25px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.35s ease-in-out;
+
+        &:hover {
+          background: #fff;
+          color: $color-one;
+        }
 
         &:last-child {
           margin-top: 0.5rem;
